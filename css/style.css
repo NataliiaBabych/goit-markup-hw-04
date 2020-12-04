@@ -121,11 +121,8 @@ margin-right: 50px;
 .address-header a:hover,
 .list-nav a:focus,
 .address-header a:focus
-.list-nav a:active,
-.header-icon:hover,
-.header-icon:focus {
+.list-nav a:active {
     color: #2196F3;
-    fill: #2196F3;
 }
 
 /* hero */
@@ -308,9 +305,8 @@ padding: 30px 32px;
 }
 
 .team-links {
-    display: inline-block;
+    display: inline-block;    
     fill: #AFB1B8;
-    
 }
 
 .links-list {
@@ -324,13 +320,54 @@ display: block;
 width: 44px;
 height: 44px;
 border-radius: 50%;
-background-color: red;
 padding: 12px;
+}
+
+.links-item a:hover {
+    background-color: #2196F3;
+}
+.team-links:hover {
+    fill: #FFFFFF;
 }
 
 .links-item:not(:last-child){
     margin-right: 10px;
 }
+/* Clients */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+
+.client-item:not(:last-child) {
+margin-right: 30px;
+}
+.clients-icon {
+    fill: #AFB1B8;
+    
+}
+.clients-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-icon:hover {
+    fill: #2196F3;
+}  
+.clients-list a:hover {
+    border: 1px solid #2196F3;
+}
+
 /* footer */
 footer {
   background-color: #2F303A;
@@ -369,7 +406,37 @@ footer {
     line-height:1.71;
     letter-spacing: 0.03em;
 }
+footer>div {
+    display: flex;
+}
+.footer-links {
+    margin-left: 70px;
+}
+.footer-links-title{
+    margin-top: 0;
+    margin-bottom: 0;
 
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    background-color: #2F303A;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-links>.links-list {
+    margin-top: 20px;
+}
+.footer-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-links {
+    display: inline-block;    
+    fill: #FFFFFF;
+}
 /* portfolio list */
 .portfolio {
     padding-top: 94px;
@@ -426,7 +493,9 @@ button {
 
 .portfolio-preview>.item {
     width: 370px;
-    /* border: 1px solid #EEEEEE; */
+}
+.portfolio-preview>.item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-content {
 border-right: 1px solid #EEEEEE;
